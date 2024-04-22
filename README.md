@@ -1,4 +1,4 @@
-# counter MOD-12 Design-and-Verification
+## Counter MOD-12 Design-and-Verification
 
 ![image](https://github.com/Nithin9741/counter-Design-and-Verification/assets/101901668/e7f0f258-c6e2-4dde-92b8-9a8fc720097b)
 
