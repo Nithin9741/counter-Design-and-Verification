@@ -20,18 +20,18 @@ signal, which can be set to either "up" or "down" mode.
 • Datain
  ❖ When Load is high, Counter can be loaded with the initial value dat in, which sets the
 starting point for counting.
-• Dataout
+• Dataout/n
 
-❖ Strategies:
+❖ Strategies:/n
 
-• Reset
- ❖ Reset should be distributed such that low value should occur number of times than high.
- ❖ Reference Model: if reset is “1” then output variable made equal to “0”.
-• Load
- ❖ Load should be distributed such that low value should occur number of times than high.
- ❖ Reference Model: If the Load is high output variable should be datain.
-• Mode
- ❖ Mode can be equally distributed.
+• Reset/n
+ ❖ Reset should be distributed such that low value should occur number of times than high./n
+ ❖ Reference Model: if reset is “1” then output variable made equal to “0”./n
+• Load/n
+ ❖ Load should be distributed such that low value should occur number of times than high./n
+ ❖ Reference Model: If the Load is high output variable should be datain./n
+• Mode/n
+ ❖ Mode can be equally distributed./n
 
  ❖ Reference Model:
  
