@@ -1,4 +1,7 @@
 # counter MOD-12 Design-and-Verification
+
+![image](https://github.com/Nithin9741/counter-Design-and-Verification/assets/101901668/e7f0f258-c6e2-4dde-92b8-9a8fc720097b)
+
 An active high-loadable up/down counter is a digital circuit programmed to count up or down based
 on user input. The counter can be loaded with an initial value, which sets the starting point for
 counting.
@@ -6,6 +9,7 @@ When counting up, the counter increments by one on each clock cycle, and when co
 counter decrements by one on each clock cycle. The direction of counting is determined by a control
 signal, which can be set to either "up" or "down" mode.
 
+![image](https://github.com/Nithin9741/counter-Design-and-Verification/assets/101901668/a9bdc65f-ff4b-42a2-bee1-34317e6f9126)
 
  # Features:
 • Reset
@@ -18,7 +22,7 @@ signal, which can be set to either "up" or "down" mode.
 starting point for counting.
 • Dataout
 
-Strategies:
+❖ Strategies:
 
 • Reset
  ❖ Reset should be distributed such that low value should occur number of times than high.
@@ -40,7 +44,7 @@ Strategies:
 • Dataout
  ❖ Score board: Dataout is compared with the output variable in reference model.
 
-Transaction:
+❖ Transaction:
 
 • Random: Reset, Mode, Load, Datain 
 Transactors:
@@ -52,7 +56,7 @@ collected in the monitor.
 • Scoreboard: Compares the data in reference model and Dataout generated in the design and
 generates coverage.
 
-Coverage Model:
+❖ Coverage Model:
 
 • Reset {implicit bins}
 • Load {implicit bins}
@@ -62,6 +66,6 @@ Coverage Model:
 • Load X Datain
 • Mode X Load X Datain
 
-Call backs:
+❖ Call backs:
 
 • Scoreboard : Callback triggers the coverage model
