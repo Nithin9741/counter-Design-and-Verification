@@ -12,8 +12,8 @@ signal, which can be set to either "up" or "down" mode.
 ![image](https://github.com/Nithin9741/counter-Design-and-Verification/assets/101901668/a9bdc65f-ff4b-42a2-bee1-34317e6f9126)
 
  # Features:
-• Reset
-• Mode
+• Reset      
+• Mode         
  ❖ UP: Increment by one on each clock cycle.
  ❖ DOWN: Decrement by one on each clock cycle.
 • Load
