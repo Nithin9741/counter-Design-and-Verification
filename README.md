@@ -1,4 +1,4 @@
-## Counter MOD-12 Design-and-Verification
+# Counter MOD-12 Design-and-Verification
 
 ![image](https://github.com/Nithin9741/counter-Design-and-Verification/assets/101901668/e7f0f258-c6e2-4dde-92b8-9a8fc720097b)
 
@@ -7,7 +7,7 @@ When counting up, the counter increments by one on each clock cycle, and when co
 
 ![image](https://github.com/Nithin9741/counter-Design-and-Verification/assets/101901668/a9bdc65f-ff4b-42a2-bee1-34317e6f9126)
 
- # Features:
+  Features:
 • Reset      
 • Mode         
  ❖ UP: Increment by one on each clock cycle.       
@@ -17,7 +17,7 @@ When counting up, the counter increments by one on each clock cycle, and when co
  ❖ When Load is high, Counter can be loaded with the initial value dat in, which sets the starting point for counting.
 • Dataout
 
-# ❖ Strategies:
+ ❖ Strategies:
 
 • Reset    
  ❖ Reset should be distributed such that low value should occur number of times than high.     
@@ -28,7 +28,7 @@ When counting up, the counter increments by one on each clock cycle, and when co
 • Mode      
  ❖ Mode can be equally distributed.        
 
- # ❖ Reference Model:        
+  ❖ Reference Model:        
  
  ▪ UP: if mode is high then if output variable is “11” then output variable made equal to “0” otherwise increment by “1”.
  ▪ DOWN: if mode is low then if output variable is “0” then output variable made equal to “11” otherwise decrement by “1”.
@@ -36,8 +36,7 @@ When counting up, the counter increments by one on each clock cycle, and when co
  ❖ Datain is randomized such that value of datain should be in the range of 0 to 11.
  • Dataout
  ❖ Score board: Dataout is compared with the output variable in reference model.
-
-# ❖ Transaction:
+ ❖ Transaction:
 
 • Random: Reset, Mode, Load, Datain Transactors:    
 • Generator: Generates random transaction.     
@@ -46,7 +45,7 @@ When counting up, the counter increments by one on each clock cycle, and when co
 • Reference Model: Mimic the design inside the environment from transaction data which is collected in the monitor.    
 • Scoreboard: Compares the data in reference model and Dataout generated in the design and generates coverage.   
 
-# ❖ Coverage Model:
+ ❖ Coverage Model:
 
 • Reset {implicit bins}   
 • Load {implicit bins}    
@@ -56,6 +55,6 @@ When counting up, the counter increments by one on each clock cycle, and when co
 • Load X Datain   
 • Mode X Load X Datain    
 
-# ❖ Call backs:       
+ ❖ Call backs:       
 
 • Scoreboard : Callback triggers the coverage model      
